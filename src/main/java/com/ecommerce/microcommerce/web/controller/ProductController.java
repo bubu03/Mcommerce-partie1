@@ -4,9 +4,7 @@ import com.ecommerce.microcommerce.dao.ProductDao;
 import com.ecommerce.microcommerce.model.Product;
 import com.ecommerce.microcommerce.web.exceptions.ProduitGratuitException;
 import com.ecommerce.microcommerce.web.exceptions.ProduitIntrouvableException;
-import com.fasterxml.jackson.databind.ser.FilterProvider;
-import com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter;
-import com.fasterxml.jackson.databind.ser.impl.SimpleFilterProvider;
+import com.ecommerce.microcommerce.web.filter.ProductFilter;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,17 +37,23 @@ public class ProductController {
 
         Iterable<Product> produits = productDao.findAll();
 
-        SimpleBeanPropertyFilter monFiltre = SimpleBeanPropertyFilter.serializeAllExcept("prixAchat");
-
-        FilterProvider listDeNosFiltres = new SimpleFilterProvider().addFilter("monFiltreDynamique", monFiltre);
-
-        MappingJacksonValue produitsFiltres = new MappingJacksonValue(produits);
-
-        produitsFiltres.setFilters(listDeNosFiltres);
+        MappingJacksonValue produitsFiltres = ProductFilter.productFilter(produits);
 
         return produitsFiltres;
     }
 
+
+    @RequestMapping(value = "/ProduitsTries", method = RequestMethod.GET)
+
+    public MappingJacksonValue trierProduitsParOrdreAlphabetique() {
+
+        Iterable<Product> produits = productDao.findAllByOrderByNomAsc();
+
+        MappingJacksonValue produitsFiltres = ProductFilter.productFilter(produits);
+
+        return produitsFiltres;
+
+    }
 
 
     //Pour les tests
