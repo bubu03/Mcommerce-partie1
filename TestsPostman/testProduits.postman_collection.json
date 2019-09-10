@@ -1,0 +1,158 @@
+{
+	"variables": [],
+	"info": {
+		"name": "testProduits",
+		"_postman_id": "6042db93-55f9-5f33-c1f6-d7f93472cc92",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "2.produitsTries",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "981ff8fa-91b7-4f29-a7b9-9d66d2d9b03a",
+					"name": "produitsTries",
+					"originalRequest": {
+						"url": "localhost:9090/ProduitsTries/",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 06 Sep 2019 11:51:03 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						}
+					],
+					"cookie": [],
+					"responseTime": 18,
+					"body": "[{\"id\":2,\"nom\":\"Aspirateur Robot\",\"prix\":500,\"prixAchat\":200},{\"id\":1,\"nom\":\"Ordinateur portable\",\"prix\":350,\"prixAchat\":120},{\"id\":3,\"nom\":\"Table de Ping Pong\",\"prix\":750,\"prixAchat\":400}]"
+				}
+			]
+		},
+		{
+			"name": "1.MargeProduit",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "31a84230-c496-46bb-938d-b7186fae305f",
+					"name": "produitsTries",
+					"originalRequest": {
+						"url": "localhost:9090/ProduitsTries/",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 06 Sep 2019 11:51:03 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						}
+					],
+					"cookie": [],
+					"responseTime": 18,
+					"body": "[{\"id\":2,\"nom\":\"Aspirateur Robot\",\"prix\":500,\"prixAchat\":200},{\"id\":1,\"nom\":\"Ordinateur portable\",\"prix\":350,\"prixAchat\":120},{\"id\":3,\"nom\":\"Table de Ping Pong\",\"prix\":750,\"prixAchat\":400}]"
+				}
+			]
+		},
+		{
+			"name": "3.ValidationPrixVente",
+			"request": {
+				"url": "",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "f927f13d-f31b-44fc-9d2c-f3a21548ef1b",
+					"name": "produitsTries",
+					"originalRequest": {
+						"url": "localhost:9090/ProduitsTries/",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json;charset=UTF-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Fri, 06 Sep 2019 11:51:03 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "transfer-encoding",
+							"key": "transfer-encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						}
+					],
+					"cookie": [],
+					"responseTime": 18,
+					"body": "[{\"id\":2,\"nom\":\"Aspirateur Robot\",\"prix\":500,\"prixAchat\":200},{\"id\":1,\"nom\":\"Ordinateur portable\",\"prix\":350,\"prixAchat\":120},{\"id\":3,\"nom\":\"Table de Ping Pong\",\"prix\":750,\"prixAchat\":400}]"
+				}
+			]
+		}
+	]
+}
